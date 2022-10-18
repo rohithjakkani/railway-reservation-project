@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>Bookings Page</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <h1 class="bookname">Booking Page</h1><hr>
+        <form>
+            <div class="elem-group">
+                <label for="name">Enter Your Name</label>
+                <input type="text" id="name" name="visitor_name" placeholder="Enter Name" required>
+            </div>
+            <div class="elem-group">
+                <label for="email">Your E-mail</label>
+                <input type="email" placeholder="Email" required>
+            </div>
+            <div class="elem-group">
+                <label>Your Age</label>
+                <input type="number" placeholder="Enter Age" required>
+            </div>
+            <div class="elem-group">
+                <label>Provide Gender</label>
+                <select id="train-selection" name="train_preference" required>
+                    <option value="" selected="true" disabled>Choose Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <div class="elem-group">
+                <label for="phone">Your Phone</label>
+                <input type="tel" id="phone" name="visitor_phone" placeholder="Enter number" required>
+            </div>
+            <hr>
+            <div class="elem-group inlined">
+                <label for="adult">Adults</label>
+                <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+            </div>
+            <div class="elem-group inlined">
+                <label for="child">Children</label>
+                <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+            </div>
+            <div class="elem-group inlined">
+                <label for="start-date">Start Date</label>
+                <input type="date" id="start-date" name="checkin" required>
+            </div>
+            <div class="elem-group">
+                <label for="train-selection">Select Source Location</label>
+                <select id="train-selection" name="train_preference" required>
+                    <option value="" selected="true" disabled>Choose a location</option>
+                    <option value="l1">Location 1</option>
+                    <option value="l1">Location 2</option>
+                    <option value="l3">Location 3</option>
+                </select>
+            </div>
+            <div class="elem-group">
+                <label for="train-selection">Select Destination Location</label>
+                <select id="train-selection" name="train_preference" required>
+                    <option value="" selected="true" disabled>Choose a location</option>
+                    <option value="l1">Location 1</option>
+                    <option value="l2">Location 2</option>
+                    <option value="l3">Location 3</option>
+                </select>
+            </div>
+            <div class="elem-group">
+                <label for="train-selection">Select Train</label>
+                <select id="train-selection" name="train_preference" required>
+                    <option value="" selected="true" disabled>Choose a Train from the list</option>
+                    <option value="t1">Train 1</option>
+                    <option value="t2">Train 2</option>
+                    <option value="t3">Train 3</option>
+                </select>
+            </div>
+            <hr>
+            <button type="submit">Book The Train</button>
+        </form>
+    </body>
+</html>
